@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; scikit-tda 0.0.4 documentation</title>
+  <title>Libraries &mdash; scikit-tda 0.0.4 documentation</title>
   
 
   
@@ -28,8 +27,10 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
-    <link rel="index" title="Index" href="#" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorials" href="tutorials/index.html" />
+    <link rel="prev" title="Background" href="background.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -101,10 +102,17 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="libraries.html">Libraries</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ripser">Ripser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#persim">Persim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kepler-mapper">Kepler Mapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cechmate">CechMate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tadasets">TaDAsets</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
 </ul>
 
@@ -151,12 +159,14 @@
     
       <li><a href="https://scikit-tda.org">Scikit-TDA</a>&raquo;<a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Index</li>
+      <li>Libraries</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/libraries.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -168,11 +178,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="libraries">
+<span id="id1"></span><h1>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h1>
+<p>Scikit-TDA provides a complete suite of TDA tools designed for academic or industry uses.
+Ripser provides an easy interface for constructing persistence diagrams and Persim houses many tools for comparing diagrams.
+Kepler-Mapper is a package for constructing and viewing Mapper from a data set, leveraging scikit-learn for as much processing as possible.</p>
+<p>Scikit-TDA libraries are structured similarly to the <a class="reference external" href="https://tidyverse.org">Tidyverse</a> in that each package can stand alone, can be installed individually, but adheres to the design principles of the library.</p>
+<div class="section" id="ripser">
+<h2>Ripser<a class="headerlink" href="#ripser" title="Permalink to this headline">¶</a></h2>
+<p>Ripser is the main persistence diagram workhorse of Scikit-TDA. It provides an easy interface for computing diagrams of many different types of data.</p>
+<p>Check out complete documentation for Ripser at <a class="reference external" href="https://ripser.scikit-tda.org">ripser.scikit-tda.org</a>.</p>
+</div>
+<div class="section" id="persim">
+<h2>Persim<a class="headerlink" href="#persim" title="Permalink to this headline">¶</a></h2>
+<p>Once diagrams are constructed, the Persim package comes into play. This package houses many methods for comparison and analysis of persistence diagrams, including persistence images, sliced wasserstein and bottleneck distances, and diagram plots.</p>
+<p>Check out complete documentation for Persim at <a class="reference external" href="https://persim.scikit-tda.org">persim.scikit-tda.org</a>.</p>
+</div>
+<div class="section" id="kepler-mapper">
+<h2>Kepler Mapper<a class="headerlink" href="#kepler-mapper" title="Permalink to this headline">¶</a></h2>
+<p>Check out complete documentation for Kepler Mapper at <a class="reference external" href="https://kepler-mapper.scikit-tda.org">kepler-mapper.scikit-tda.org</a>.</p>
+</div>
+<div class="section" id="cechmate">
+<h2>CechMate<a class="headerlink" href="#cechmate" title="Permalink to this headline">¶</a></h2>
+<p>Check out complete documentation for CechMate at <a class="reference external" href="https://cechmate.scikit-tda.org">cechmate.scikit-tda.org</a>.</p>
+</div>
+<div class="section" id="tadasets">
+<h2>TaDAsets<a class="headerlink" href="#tadasets" title="Permalink to this headline">¶</a></h2>
+<p>Check out complete documentation for TaDAsets at <a class="reference external" href="https://tadasets.scikit-tda.org">tadasets.scikit-tda.org</a>.</p>
+</div>
 </div>
 
 
@@ -180,6 +213,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorials/index.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="background.html" class="btn btn-neutral" title="Background" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

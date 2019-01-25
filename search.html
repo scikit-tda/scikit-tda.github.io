@@ -5,21 +5,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-124965309-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; scikit-tda 0.0.3 documentation</title>
+  <title>Search &mdash; scikit-tda 0.0.4 documentation</title>
   
 
   
@@ -44,6 +33,18 @@
   
   <script src="_static/js/modernizr.min.js"></script>
 
+  <!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-124965309-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
 </head>
 
 <body class="wy-body-for-nav">
@@ -56,6 +57,10 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search">
           
+
+          <a href="https://scikit-tda.org">
+    <big>a scikit-tda project</big>
+</a>
 
           
             <a href="index.html" class="icon icon-home"> scikit-tda
@@ -71,7 +76,7 @@
             
             
               <div class="version">
-                0.0.3
+                0.0.4
               </div>
             
           
@@ -95,19 +100,11 @@
               
             
             
-              <p class="caption"><span class="caption-text">Libraries</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://ripser.scikit-tda.org">Ripser - Data to diagrams in one line</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://persim.scikit-tda.org">Persim - Easy Persistence Images</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://kepler-mapper.scikit-tda.org">Kepler Mapper - Mapper framework integrated into sklearn</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://umap-learn.readthedocs.io">UMAP - Mathematically justified dimensionality reduction</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://tadasets.scikit-tda.org">TaDAsets - Data sets for demonstrating TDA.</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Tutorials</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/diagrams-on-umap.html">Persistance Diagrams of Reduced Space</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/visualizing-cycles-with-umap.html">Extracting cycles and visualizing them on UMAP reduced dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/classification-of-persistence-images.html">Using persistence images for classification</a></li>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
 </ul>
 
             
@@ -151,7 +148,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="https://scikit-tda.org">Scikit-TDA</a>&raquo;<a href="index.html">Docs</a> &raquo;</li>
         
       <li>Search</li>
     
@@ -194,7 +191,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Nathaniel Saul.
+        &copy; Copyright 2019, Nathaniel Saul
 
     </p>
   </div>
@@ -213,23 +210,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.0.3',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
-
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/searchtools.js"></script>
+    
   
 
   <script type="text/javascript" src="_static/js/theme.js"></script>

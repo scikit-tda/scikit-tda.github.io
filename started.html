@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Using persistence images for classification &mdash; scikit-tda 0.0.4 documentation</title>
+  <title>Getting Started &mdash; scikit-tda 0.0.4 documentation</title>
   
 
   
@@ -24,15 +24,16 @@
 
   
 
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Extracting cycles and visualizing them on UMAP reduced dimension" href="visualizing-cycles-with-umap.html" /> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Background" href="background.html" />
+    <link rel="prev" title="Scikit-TDA" href="index.html" /> 
 
   
-  <script src="../_static/js/modernizr.min.js"></script>
+  <script src="_static/js/modernizr.min.js"></script>
 
   <!-- Google Analytics -->
 <script>
@@ -64,12 +65,12 @@
 </a>
 
           
-            <a href="../index.html" class="icon icon-home"> scikit-tda
+            <a href="index.html" class="icon icon-home"> scikit-tda
           
 
           
             
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -84,7 +85,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -102,15 +103,13 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../background.html">Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../libraries.html">Libraries</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="diagrams-on-umap.html">Persistance Diagrams of Reduced Space</a></li>
-<li class="toctree-l2"><a class="reference internal" href="visualizing-cycles-with-umap.html">Extracting cycles and visualizing them on UMAP reduced dimension</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Using persistence images for classification</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
 </ul>
 
             
@@ -125,7 +124,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">scikit-tda</a>
+          <a href="index.html">scikit-tda</a>
         
       </nav>
 
@@ -154,17 +153,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="https://scikit-tda.org">Scikit-TDA</a>&raquo;<a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="https://scikit-tda.org">Scikit-TDA</a>&raquo;<a href="index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">Tutorials</a> &raquo;</li>
-        
-      <li>Using persistence images for classification</li>
+      <li>Getting Started</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/tutorials/classification-of-persistence-images.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/started.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -177,8 +174,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="using-persistence-images-for-classification">
-<h1>Using persistence images for classification<a class="headerlink" href="#using-persistence-images-for-classification" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>To install, you can use pip</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">scikit</span><span class="o">-</span><span class="n">tda</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -189,8 +193,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="background.html" class="btn btn-neutral float-right" title="Background" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="visualizing-cycles-with-umap.html" class="btn btn-neutral" title="Extracting cycles and visualizing them on UMAP reduced dimension" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="index.html" class="btn btn-neutral" title="Scikit-TDA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -220,15 +226,15 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     
   
 
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {
