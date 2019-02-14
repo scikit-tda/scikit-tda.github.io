@@ -58,31 +58,91 @@
             
   <div class="section" id="libraries">
 <span id="id1"></span><h1>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h1>
-<p>Scikit-TDA provides a complete suite of TDA tools designed for academic or industry uses.
-Ripser provides an easy interface for constructing persistence diagrams and Persim houses many tools for comparing diagrams.
-Kepler-Mapper is a package for constructing and viewing Mapper from a data set, leveraging scikit-learn for as much processing as possible.</p>
-<p>Scikit-TDA libraries are structured similarly to the <a class="reference external" href="https://tidyverse.org">Tidyverse</a> in that each package can stand alone, can be installed individually, but adheres to the design principles of the library.</p>
-<div class="section" id="ripser">
-<h2>Ripser<a class="headerlink" href="#ripser" title="Permalink to this headline">¶</a></h2>
-<p>Ripser is the main persistence diagram workhorse of Scikit-TDA. It provides an easy interface for computing diagrams of many different types of data.</p>
-<p>Check out complete documentation for Ripser at <a class="reference external" href="https://ripser.scikit-tda.org">ripser.scikit-tda.org</a>.</p>
+<p>Scikit-TDA provides a complete suite of TDA tools designed for academic or industry uses.</p>
+<p>The libraries are structured similarly to the <a class="reference external" href="https://tidyverse.org">Tidyverse</a> in that each package can stand alone, can be installed individually, but adheres to the design principles of the library. The most benefit comes from using all of them together. You’ll notice in many of the examples and notebooks that often multiple libraries are used together.</p>
+<hr><a class="reference internal image-reference" href="_images/ripser.png"><img alt="logo for cec" class="align-right" src="_images/ripser.png" style="height: 130px;" /></a>
+<div class="section" id="ripser-py">
+<h2>Ripser.py<a class="headerlink" href="#ripser-py" title="Permalink to this headline">¶</a></h2>
+<div class="docutils container">
+<p>Ripser.py is a lean persistent homology package for Python. Building on the blazing fast C++ Ripser package as the core computational engine, Ripser.py provides an intuitive interface for</p>
+<ul class="simple">
+<li>computing persistence cohomology of sparse and dense data sets,</li>
+<li>visualizing persistence diagrams,</li>
+<li>computing lowerstar filtrations on images, and</li>
+<li>computing representative cochains.</li>
+</ul>
+<p>Installation is as easy as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">Cython</span> <span class="n">ripser</span>
+</pre></div>
+</div>
+<p>Check out complete documentation for Ripser.py at <a class="reference external" href="https://ripser.scikit-tda.org">ripser.scikit-tda.org</a>.</p>
+</div>
+<hr><a class="reference internal image-reference" href="_images/persim.png"><img alt="logo for cec" class="align-right" src="_images/persim.png" style="height: 130px;" /></a>
 </div>
 <div class="section" id="persim">
 <h2>Persim<a class="headerlink" href="#persim" title="Permalink to this headline">¶</a></h2>
-<p>Once diagrams are constructed, the Persim package comes into play. This package houses many methods for comparison and analysis of persistence diagrams, including persistence images, sliced wasserstein and bottleneck distances, and diagram plots.</p>
+<div class="docutils container">
+<p>Once diagrams are constructed, the Persim package comes into play.
+This package houses many methods for comparison and analysis of persistence diagrams. It currently houses implementations of</p>
+<ul class="simple">
+<li>Persistence Images</li>
+<li>Diagram distances (Bottleneck distance, Sliced Wasserstein Kernel, Heat Kernel)</li>
+<li>Diagram visualization</li>
+</ul>
+<p>Installation is as easy as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">persim</span>
+</pre></div>
+</div>
 <p>Check out complete documentation for Persim at <a class="reference external" href="https://persim.scikit-tda.org">persim.scikit-tda.org</a>.</p>
+</div>
+<hr><a class="reference internal image-reference" href="_images/kepler-mapper.png"><img alt="logo for cec" class="align-right" src="_images/kepler-mapper.png" style="height: 130px;" /></a>
 </div>
 <div class="section" id="kepler-mapper">
 <h2>Kepler Mapper<a class="headerlink" href="#kepler-mapper" title="Permalink to this headline">¶</a></h2>
+<div class="docutils container">
+<p>Kepler Mapper is a library implementing the Mapper algorithm in Python. Mapper can be used for visualization of the topological structures in a high-dimensional data point cloud data. Kepler Mapper leverages Scikit-Learn API compatible cluster and scaling algorithms to streamline the construction of the algorithm. The library also provides multiple visualization tools built on D3.js or Plotly.</p>
+<p>Installation is as easy as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">kmapper</span>
+</pre></div>
+</div>
 <p>Check out complete documentation for Kepler Mapper at <a class="reference external" href="https://kepler-mapper.scikit-tda.org">kepler-mapper.scikit-tda.org</a>.</p>
+</div>
+<hr><a class="reference internal image-reference" href="_images/cechmate.png"><img alt="logo for cec" class="align-right" src="_images/cechmate.png" style="height: 130px;" /></a>
 </div>
 <div class="section" id="cechmate">
 <h2>CechMate<a class="headerlink" href="#cechmate" title="Permalink to this headline">¶</a></h2>
+<div class="docutils container">
+<p>This library provides easy to use constructors for custom filtrations that are suitable for use with Phat. Phat currently provides a clean interface for persistence reduction algorithms for boundary matrices. This tool helps bridge the gap between data and boundary matrices. Currently, we support construction of</p>
+<ul class="simple">
+<li>Alpha filtrations,</li>
+<li>Rips filtrations, and</li>
+<li>Cech filtrations, and</li>
+<li>provide an easy interface for Phat.</li>
+</ul>
+<p>Installation is as easy as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">cechmate</span>
+</pre></div>
+</div>
 <p>Check out complete documentation for CechMate at <a class="reference external" href="https://cechmate.scikit-tda.org">cechmate.scikit-tda.org</a>.</p>
+</div>
+<hr><a class="reference internal image-reference" href="_images/tadasets.png"><img alt="logo for cec" class="align-right" src="_images/tadasets.png" style="height: 130px;" /></a>
 </div>
 <div class="section" id="tadasets">
 <h2>TaDAsets<a class="headerlink" href="#tadasets" title="Permalink to this headline">¶</a></h2>
+<div class="docutils container">
+<p>This package provides some nice utilities for creating and loading data sets that are useful for Topological Data Analysis. Currently, we provide various synthetic data sets with particular topological features and various levels of noise and dimension. Currently includes</p>
+<ul class="simple">
+<li>n-spheres,</li>
+<li>torus,</li>
+<li>swiss rolls, and</li>
+<li>figure 8s.</li>
+</ul>
+<p>Installation is as easy as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">tadasets</span>
+</pre></div>
+</div>
 <p>Check out complete documentation for TaDAsets at <a class="reference external" href="https://tadasets.scikit-tda.org">tadasets.scikit-tda.org</a>.</p>
+</div>
 </div>
 </div>
 
@@ -99,7 +159,7 @@ Kepler-Mapper is a package for constructing and viewing Mapper from a data set, 
   <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Libraries</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ripser">Ripser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ripser-py">Ripser.py</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#persim">Persim</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#kepler-mapper">Kepler Mapper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cechmate">CechMate</a></li>
