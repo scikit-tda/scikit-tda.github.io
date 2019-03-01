@@ -14,10 +14,11 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Tutorials" href="tutorials/index.html" />
-    <link rel="prev" title="Background" href="background.html" />
+    <link rel="prev" title="Theory" href="theory.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <link rel="stylesheet" href="_static/custom_style.css" type="text/css" />
   </head><body>
@@ -36,7 +37,7 @@
     <ul>
         <li>
           &larr;
-          <a href="background.html" title="Previous document">Background</a>
+          <a href="theory.html" title="Previous document">Theory</a>
         </li>
         <li>
           <a href="tutorials/index.html" title="Next document">Tutorials</a>
@@ -59,10 +60,19 @@
   <div class="section" id="libraries">
 <span id="id1"></span><h1>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h1>
 <p>Scikit-TDA provides a complete suite of TDA tools designed for academic or industry uses.</p>
-<p>The libraries are structured similarly to the <a class="reference external" href="https://tidyverse.org">Tidyverse</a> in that each package can stand alone, can be installed individually, but adheres to the design principles of the library. The most benefit comes from using all of them together. You’ll notice in many of the examples and notebooks that often multiple libraries are used together.</p>
+<p>To install the entire suite</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">scikit</span><span class="o">-</span><span class="n">tda</span>
+</pre></div>
+</div>
+<p>Below, you’ll find information on each individual package, along with resources to explore more. Each package is well tested, well documented, easy to install, and open for contributions. If you find any bugs in the code or documentation, please let us know on <a class="reference external" href="https://github.com/scikit-tda">github</a></p>
 <hr><a class="reference external image-reference" href="https://ripser.scikit-tda.org"><img alt="logo for cec" class="align-right" src="_images/ripser.png" style="height: 130px;" /></a>
 <div class="section" id="ripser-py">
 <h2>Ripser.py<a class="headerlink" href="#ripser-py" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://badge.fury.io/py/ripser"><img alt="https://badge.fury.io/py/ripser.svg" src="https://badge.fury.io/py/ripser.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/ripser/"><img alt="https://pypip.in/download/ripser/badge.svg" src="https://pypip.in/download/ripser/badge.svg" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/scikit-tda/ripser.py"><img alt="https://travis-ci.org/scikit-tda/ripser.py.svg?branch=master" src="https://travis-ci.org/scikit-tda/ripser.py.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://codecov.io/gh/scikit-tda/ripser.py"><img alt="https://codecov.io/gh/scikit-tda/ripser.py/branch/master/graph/badge.svg" src="https://codecov.io/gh/scikit-tda/ripser.py/branch/master/graph/badge.svg" /></a>
+<a class="reference external image-reference" href="https://opensource.org/licenses/MIT)"><img alt="https://img.shields.io/badge/License-MIT-yellow.svg" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
 <div class="docutils container">
 <p>Ripser.py is a lean persistent homology package for Python. Building on the blazing fast C++ Ripser package as the core computational engine, Ripser.py provides an intuitive interface for</p>
 <ul class="simple">
@@ -72,15 +82,37 @@
 <li>computing representative cochains.</li>
 </ul>
 <p>Installation is as easy as</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">Cython</span> <span class="n">ripser</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">ripser</span>
 </pre></div>
 </div>
-<p>Check out complete documentation for Ripser.py at <a class="reference external" href="https://ripser.scikit-tda.org">ripser.scikit-tda.org</a>.</p>
+<p>Check out complete documentation for Ripser.py at <a class="reference external" href="https://ripser.scikit-tda.org">ripser.scikit-tda.org</a> and the source code at <a class="reference external" href="https://github.com/scikit-tda/ripser.py">github.com/scikit-tda/ripser.py</a></p>
+</div>
+<hr><a class="reference external image-reference" href="https://kepler-mapper.scikit-tda.org"><img alt="logo for cec" class="align-right" src="_images/kepler-mapper.png" style="height: 130px;" /></a>
+</div>
+<div class="section" id="kepler-mapper">
+<h2>Kepler Mapper<a class="headerlink" href="#kepler-mapper" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://badge.fury.io/py/kmapper"><img alt="https://badge.fury.io/py/kmapper.svg" src="https://badge.fury.io/py/kmapper.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/kmapper/"><img alt="https://pypip.in/download/kmapper/badge.svg" src="https://pypip.in/download/kmapper/badge.svg" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/scikit-tda/kepler-mapper"><img alt="https://travis-ci.org/scikit-tda/kepler-mapper.svg?branch=master" src="https://travis-ci.org/scikit-tda/kepler-mapper.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://codecov.io/gh/scikit-tda/kepler-mapper"><img alt="https://codecov.io/gh/scikit-tda/kepler-mapper/branch/master/graph/badge.svg" src="https://codecov.io/gh/scikit-tda/kepler-mapper/branch/master/graph/badge.svg" /></a>
+<a class="reference external image-reference" href="https://opensource.org/licenses/MIT)"><img alt="https://img.shields.io/badge/License-MIT-yellow.svg" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
+<div class="docutils container">
+<p>Kepler Mapper is a library implementing the Mapper algorithm in Python. Mapper can be used for visualization of the topological structures in a high-dimensional data point cloud data. Kepler Mapper leverages Scikit-Learn API compatible cluster and scaling algorithms to streamline the construction of the algorithm. The library also provides multiple visualization tools built on D3.js or Plotly.</p>
+<p>Installation is as easy as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">kmapper</span>
+</pre></div>
+</div>
+<p>Check out complete documentation for Kepler Mapper at <a class="reference external" href="https://kepler-mapper.scikit-tda.org">kepler-mapper.scikit-tda.org</a> and the source code at <a class="reference external" href="https://github.com/scikit-tda/kepler-mapper">github.com/scikit-tda/kepler-mapper</a></p>
 </div>
 <hr><a class="reference external image-reference" href="https://persim.scikit-tda.org"><img alt="logo for cec" class="align-right" src="_images/persim.png" style="height: 130px;" /></a>
 </div>
 <div class="section" id="persim">
 <h2>Persim<a class="headerlink" href="#persim" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://badge.fury.io/py/persim"><img alt="https://badge.fury.io/py/persim.svg" src="https://badge.fury.io/py/persim.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/persim/"><img alt="https://pypip.in/download/persim/badge.svg" src="https://pypip.in/download/persim/badge.svg" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/scikit-tda/persim"><img alt="https://travis-ci.org/scikit-tda/persim.svg?branch=master" src="https://travis-ci.org/scikit-tda/persim.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://codecov.io/gh/scikit-tda/persim"><img alt="https://codecov.io/gh/scikit-tda/persim/branch/master/graph/badge.svg" src="https://codecov.io/gh/scikit-tda/persim/branch/master/graph/badge.svg" /></a>
+<a class="reference external image-reference" href="https://opensource.org/licenses/MIT)"><img alt="https://img.shields.io/badge/License-MIT-yellow.svg" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
 <div class="docutils container">
 <p>Once diagrams are constructed, the Persim package comes into play.
 This package houses many methods for comparison and analysis of persistence diagrams. It currently houses implementations of</p>
@@ -93,24 +125,17 @@ This package houses many methods for comparison and analysis of persistence diag
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">persim</span>
 </pre></div>
 </div>
-<p>Check out complete documentation for Persim at <a class="reference external" href="https://persim.scikit-tda.org">persim.scikit-tda.org</a>.</p>
-</div>
-<hr><a class="reference external image-reference" href="https://kepler-mapper.scikit-tda.org"><img alt="logo for cec" class="align-right" src="_images/kepler-mapper.png" style="height: 130px;" /></a>
-</div>
-<div class="section" id="kepler-mapper">
-<h2>Kepler Mapper<a class="headerlink" href="#kepler-mapper" title="Permalink to this headline">¶</a></h2>
-<div class="docutils container">
-<p>Kepler Mapper is a library implementing the Mapper algorithm in Python. Mapper can be used for visualization of the topological structures in a high-dimensional data point cloud data. Kepler Mapper leverages Scikit-Learn API compatible cluster and scaling algorithms to streamline the construction of the algorithm. The library also provides multiple visualization tools built on D3.js or Plotly.</p>
-<p>Installation is as easy as</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">kmapper</span>
-</pre></div>
-</div>
-<p>Check out complete documentation for Kepler Mapper at <a class="reference external" href="https://kepler-mapper.scikit-tda.org">kepler-mapper.scikit-tda.org</a>.</p>
+<p>Check out complete documentation for Persim at <a class="reference external" href="https://persim.scikit-tda.org">persim.scikit-tda.org</a> and the source code at <a class="reference external" href="https://github.com/scikit-tda/persim">github.com/scikit-tda/persim</a></p>
 </div>
 <hr><a class="reference external image-reference" href="https://cechmate.scikit-tda.org"><img alt="logo for cec" class="align-right" src="_images/cechmate.png" style="height: 130px;" /></a>
 </div>
 <div class="section" id="cechmate">
 <h2>CechMate<a class="headerlink" href="#cechmate" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://badge.fury.io/py/cechmate"><img alt="https://badge.fury.io/py/cechmate.svg" src="https://badge.fury.io/py/cechmate.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/cechmate/"><img alt="https://pypip.in/download/cechmate/badge.svg" src="https://pypip.in/download/cechmate/badge.svg" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/scikit-tda/cechmate"><img alt="https://travis-ci.org/scikit-tda/cechmate.svg?branch=master" src="https://travis-ci.org/scikit-tda/cechmate.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://codecov.io/gh/scikit-tda/cechmate"><img alt="https://codecov.io/gh/scikit-tda/cechmate/branch/master/graph/badge.svg" src="https://codecov.io/gh/scikit-tda/cechmate/branch/master/graph/badge.svg" /></a>
+<a class="reference external image-reference" href="https://opensource.org/licenses/MIT)"><img alt="https://img.shields.io/badge/License-MIT-yellow.svg" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
 <div class="docutils container">
 <p>This library provides easy to use constructors for custom filtrations that are suitable for use with Phat. Phat currently provides a clean interface for persistence reduction algorithms for boundary matrices. This tool helps bridge the gap between data and boundary matrices. Currently, we support construction of</p>
 <ul class="simple">
@@ -123,12 +148,17 @@ This package houses many methods for comparison and analysis of persistence diag
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">cechmate</span>
 </pre></div>
 </div>
-<p>Check out complete documentation for CechMate at <a class="reference external" href="https://cechmate.scikit-tda.org">cechmate.scikit-tda.org</a>.</p>
+<p>Check out complete documentation for CechMate at <a class="reference external" href="https://cechmate.scikit-tda.org">cechmate.scikit-tda.org</a> and the source code at <a class="reference external" href="https://github.com/scikit-tda/cechmate">github.com/scikit-tda/cechmate</a></p>
 </div>
 <hr><a class="reference external image-reference" href="https://tadasets.scikit-tda.org"><img alt="logo for cec" class="align-right" src="_images/tadasets.png" style="height: 130px;" /></a>
 </div>
 <div class="section" id="tadasets">
 <h2>TaDAsets<a class="headerlink" href="#tadasets" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://badge.fury.io/py/tadasets"><img alt="https://badge.fury.io/py/tadasets.svg" src="https://badge.fury.io/py/tadasets.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/tadasets/"><img alt="https://pypip.in/download/tadasets/badge.svg" src="https://pypip.in/download/tadasets/badge.svg" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/scikit-tda/tadasets"><img alt="https://travis-ci.org/scikit-tda/tadasets.svg?branch=master" src="https://travis-ci.org/scikit-tda/tadasets.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://codecov.io/gh/scikit-tda/tadasets"><img alt="https://codecov.io/gh/scikit-tda/tadasets/branch/master/graph/badge.svg" src="https://codecov.io/gh/scikit-tda/tadasets/branch/master/graph/badge.svg" /></a>
+<a class="reference external image-reference" href="https://opensource.org/licenses/MIT)"><img alt="https://img.shields.io/badge/License-MIT-yellow.svg" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
 <div class="docutils container">
 <p>This package provides some nice utilities for creating and loading data sets that are useful for Topological Data Analysis. Currently, we provide various synthetic data sets with particular topological features and various levels of noise and dimension. Currently includes</p>
 <ul class="simple">
@@ -141,7 +171,7 @@ This package houses many methods for comparison and analysis of persistence diag
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">tadasets</span>
 </pre></div>
 </div>
-<p>Check out complete documentation for TaDAsets at <a class="reference external" href="https://tadasets.scikit-tda.org">tadasets.scikit-tda.org</a>.</p>
+<p>Check out complete documentation for TaDAsets at <a class="reference external" href="https://tadasets.scikit-tda.org">tadasets.scikit-tda.org</a> and the source code at <a class="reference external" href="https://github.com/scikit-tda/tadasets">github.com/scikit-tda/tadasets</a></p>
 </div>
 </div>
 </div>
@@ -155,27 +185,6 @@ This package houses many methods for comparison and analysis of persistence diag
             <p class="logo"><a href="index.html">
               <img class="logo" src="_static/logo.png" alt="Logo"/>
             </a></p>
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Libraries</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ripser-py">Ripser.py</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#persim">Persim</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#kepler-mapper">Kepler Mapper</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#cechmate">CechMate</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tadasets">TaDAsets</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
-</ul>
-
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/libraries.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
 <form class="search" action="search.html" method="get">
   <input type="text" name="q"
    placeholder="type to search" />
@@ -183,6 +192,21 @@ This package houses many methods for comparison and analysis of persistence diag
   <input type="hidden" name="area" value="default" />
 </form>
 <script type="text/javascript">$('#searchbox').show(0);</script>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theory.html">Theory</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ripser-py">Ripser.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kepler-mapper">Kepler Mapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#persim">Persim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cechmate">CechMate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tadasets">TaDAsets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
+</ul>
+
         </div>
       </div>
       <div class="clearer"></div>
@@ -192,7 +216,7 @@ This package houses many methods for comparison and analysis of persistence diag
     <ul>
         <li>
           &larr;
-          <a href="background.html" title="Previous document">Background</a>
+          <a href="theory.html" title="Previous document">Theory</a>
         </li>
         <li>
           <a href="tutorials/index.html" title="Next document">Tutorials</a>
